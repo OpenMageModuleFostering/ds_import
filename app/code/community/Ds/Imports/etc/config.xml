@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ds_Imports>
+            <version>1.0.0</version>
+        </Ds_Imports>
+    </modules>
+    <admin>
+        <routers>
+			<adminhtml>
+				<args>
+                    <modules>
+                        <ds_imports before="Mage_Adminhtml">Ds_Imports_Adminhtml</ds_imports>
+                    </modules>
+				</args>
+			</adminhtml>
+        </routers>
+    </admin>
+    <global>
+		<adminhtml>
+			<!-- <events>
+				<core_block_abstract_prepare_layout_before>
+					<observers>
+						<imports_core_block_abstract_prepare_layout_before>
+							<class>Ds_Imports_Model_Observer</class>
+							<method>exportselectedorder</method>
+						</imports_core_block_abstract_prepare_layout_before>
+					</observers>
+				</core_block_abstract_prepare_layout_before>
+			</events> -->
+			<layout>
+				<updates>
+					<ds_imports>
+						<file>importer.xml</file>
+					</ds_imports>
+				</updates>
+			</layout>
+		</adminhtml>
+		<helpers>
+            <imports>
+                <class>Ds_Imports_Helper</class>
+            </imports>
+        </helpers>
+		<blocks>
+            <imports>
+                <class>Ds_Imports_Block</class>
+            </imports>
+			<!-- <adminhtml>
+				<rewrite>
+					<sales_order_grid>Ds_Imports_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+				</rewrite>
+			</adminhtml> -->
+        </blocks>
+		<models>
+            <imports>
+                <class>Ds_Imports_Model</class>
+                <resourceModel>imports_resource</resourceModel>
+            </imports>
+        </models>
+        <resources>
+            <imports_setup>
+                <setup>
+                    <module>Ds_Imports</module>
+                </setup>
+            </imports_setup>
+        </resources>
+    </global> 
+</config>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ds_Import</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Magento Extension For order import/export </summary>
+    <description>&lt;h3&gt;Detail Description&lt;/h3&gt;&#xD;
+&lt;p&gt;Orders import / export extension, using this extension you can import/export all order data and related customer data like billing/shipping address, email address etc. This works for registered customers or people who made their orders as guest.&#xD;
+  &lt;/p&gt;&#xD;
+&lt;h3&gt; Features &lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt; Easy to installation &lt;/li&gt;&#xD;
+&lt;li&gt; Import/Export orders for type (simple/configurable product) using csv. &lt;/li&gt;&#xD;
+&lt;li&gt; Can create Invoices, Shipments at the time of import based on order status. &lt;/li&gt;&#xD;
+&lt;li&gt; Enables Admin to export only selected orders or all orders. &lt;/li&gt;	&#xD;
+&lt;li&gt; Provide an error log report for orders which fails to import. &lt;/li&gt;&#xD;
+&lt;li&gt;Exporting orders from older Magento and Importing exact same orders on new version. &lt;/li&gt;&#xD;
+&lt;li&gt;By this module customer can be select no. of order import at a time like (50,100,200) etc. &lt;/li&gt;&#xD;
+&lt;li&gt; Compatible with all browsers.&lt;/li&gt;&#xD;
+&lt;/ul&gt;	&#xD;
+</description>
+    <notes>stable</notes>
+    <authors><author><name>Dotsquares</name><user>dotsquaresltd</user><email>support.extensions@dotsquares.com</email></author></authors>
+    <date>2016-04-07</date>
+    <time>13:40:40</time>
+    <contents><target name="magecommunity"><dir name="Ds"><dir name="Imports"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="Form.php" hash="8f0b3d242cea0bed86afa246aa2dff0c"/><file name="Grid.php" hash="10f557a90360e92d0d3c76c2fa31a2eb"/></dir><file name="Order.php" hash="d29116b51614f397213886d5b2aa2f92"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="89d6d6642ddc9be1b66c38c2665620b7"/></dir><dir name="Model"><file name="Allorder.php" hash="b0effae7ae72aacc958263b426e31b57"/><file name="Createorder.php" hash="38246fcf44d3181efaca7984702a0cb3"/><dir name="Functional"><file name="Creditmemo.php" hash="1f999a6be2954b5581caa16eb30a6c71"/><file name="Export.php" hash="f6540d47ff075e2dd3f97e8245b35dd5"/><file name="Invoice.php" hash="22438fa001f8bf61dbdbc14ef6d32eb4"/><file name="Shipment.php" hash="d4bb3f3cf0bf180df04523e3f9c0af33"/></dir><file name="Importallorders.php" hash="e99f213a29cf52fc0305fcb7acdfbde4"/><file name="Selectorder.php" hash="8b363ee545d244e0f63016c5191d89d7"/><dir name="Table"><file name="Billingtable.php" hash="fd2e89e0659aae59d0be93d478e60f7a"/><file name="Csvcontent.php" hash="e4bd8e6654fc6c0130439eda6c1db1c0"/><file name="Csvhead.php" hash="36f6573936de0d0e165ed444edf18ad9"/><file name="Saleitems.php" hash="188b864f2770907e9724015594d7113d"/><file name="Saletable.php" hash="0874175a7b596f107b1ae1de1617efaf"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ExportsController.php" hash="0a1355d2042421297fefabb69f149472"/><file name="ImportsController.php" hash="c36cead6503d81be1b5856bb0f78b170"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="ee094952df00680dec2d9ff2d7b6ae0f"/><file name="config.xml" hash="03cc94848e409144528e94f31092e4fc"/><file name="system.xml" hash="e4d1b443834fd5eb03ec7dae1832d971"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ds_Imports.xml" hash="dda91ba6d6d371079903acecf62a8fb3"/></dir></target><target name="mage"><dir><dir name="var"><dir name="ds"><dir name="log"><file name="error.htm" hash="f859a2dad67f5e256c7d73b5adc06830"/></dir><dir name="ordercsv"><file name="orderexport_form_orderid_15_to_69_date_20160406_134431.csv" hash="198939ca300fcc9c85fa3d6f2e26c568"/><file name="orderexport_form_orderid_15_to_69_date_20160406_134628.csv" hash="198939ca300fcc9c85fa3d6f2e26c568"/><file name="orderexport_form_orderid_1_to_11_date_20160407_090823.csv" hash="1f15b355e3f752a9ede6d2662300e11f"/><file name="orderexport_form_orderid_1_to_1_date_20160407_084241.csv" hash="b47b220d08eaacae3a49127cb2df50f4"/><file name="orderexport_form_orderid_1_to_2_date_20160406_133253.csv" hash="b466acc1d412fc2e870c2b2a236f599c"/><file name="orderexport_form_orderid_1_to_2_date_20160406_133352.csv" hash="b466acc1d412fc2e870c2b2a236f599c"/><file name="orderexport_form_orderid_1_to_8_date_20160407_081033.csv" hash="a0bd6f4716ab3450eedb09aedcd71cdf"/><file name="orderexport_form_orderid_1_to_8_date_20160407_081059.csv" hash="a0bd6f4716ab3450eedb09aedcd71cdf"/><file name="orderexport_form_orderid_3_to_86_date_20160405_130734.csv" hash="933dfd246b3b8f6ef0f35991dc96f3cd"/><file name="orderexport_form_orderid_3_to_86_date_20160406_133855.csv" hash="933dfd246b3b8f6ef0f35991dc96f3cd"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

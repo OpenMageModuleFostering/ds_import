@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+		<menu>
+			<sales>
+				<children>
+					<import module="imports">
+						<title>DS Order Import/Export</title>
+						<sort_order>20</sort_order>
+						<children>
+							<export module="imports">
+								<title>Export Orders</title>
+								<sort_order>1</sort_order>
+								<action>*/exports</action>
+							</export>
+							<import module="imports">
+								<title>Import Orders</title>
+								<sort_order>2</sort_order>
+								<action>*/imports</action>
+							</import>
+						</children>
+					</import>
+				</children>
+			</sales>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<imports>
+							<title>Exporter Module</title>
+							<sort_order>10</sort_order>
+							<children>
+								<!-- <export>
+									<title>Export Orders</title>
+								</export> -->
+								<import>
+									<title>Import Orders</title>
+								</import>
+							</children>
+						</imports>
+						<system>
+							<children>
+								<config>
+									<children>
+										<ds_imports translate="title" module="imports">
+											<title>General Setting Section</title>
+											<sort_order>0</sort_order>
+										</ds_imports>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		
+</config>

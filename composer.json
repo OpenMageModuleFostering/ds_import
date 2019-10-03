@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Ds_Import",
+    "name": "OpenMageModuleFostering\/Ds_Import",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
-    "description": "Magento Extension For order import/export ",
+    "description": "Magento Extension For order import\/export ",
     "authors": [
-    {
-        "name": "Dotsquares",
-        "email": "support.extensions@dotsquares.com"
-    }
-],
+        {
+            "name": "Dotsquares",
+            "email": "support.extensions@dotsquares.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
